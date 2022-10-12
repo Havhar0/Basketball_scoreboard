@@ -1,0 +1,306 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,300,400,700);
+@font-face {
+    font-family: 'Cursed Timer ULiL';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Cursed Timer ULiL'), url('https://fonts.cdnfonts.com/s/40642/CursedTimerUlil-Aznm.woff') format('woff');
+}
+body {
+
+    background-image: url(images/backetball.jpg);
+    height: 100%;
+    font-family: 'Open Sans';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h3 {
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 800;
+font-size: 12px;
+line-height: 36px;
+text-align: center;
+color: #FFFFFF;
+}
+
+
+/* ------  WHOLE APP CONTAINER */
+
+.container {
+
+    margin-top: 100px;
+    background-image: url("images/basketball_2.jpg");
+    background-size: auto 100%;
+    background-color:#353535;
+    border: 15px solid #454545;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    width: 575px;
+    height: 595px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* ------ UPPER SECTION */
+
+
+.timer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 416px;
+}
+
+#timerDisplay {
+    background-color: #222121;
+    border: 5px solid #443F3F;
+    border-radius: 5px;
+    width: 213px;
+    height: 67px;
+    font-family: 'Cursed Timer ULiL';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    color: #FFE600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container #handler,
+.container #timer-reset {
+
+    
+    font-size: 10px;
+    color: #FFFFFF;
+    text-align: center;
+    background-color:#353535;
+    border-color: #948502 ;
+    border: 2px solid #948502;
+    border-radius: 5px;
+    width: 70px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+
+}
+/* ------ UPPER SECTION */
+
+h3 {
+    font-size: 48px;
+    margin-top: 0px;
+    margin-bottom: 21px;
+}
+
+#container-home-guest{
+    
+    display: flex;
+    justify-content: space-between;
+    width: 416px;
+    margin-top: 42px;
+    
+}
+
+
+/* ------ HOME */
+
+
+.column-home{
+    width: 158px;
+}
+
+#home-counter {
+    background-color: #222121;
+    border: 5px solid #443F3F;
+    border-radius: 5px;
+    width: 155px;
+    height: 120px;
+    font-family: 'Cursed Timer ULiL';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 90px;
+    color: #FFE600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 26px;
+}
+
+.home-points {
+    display: flex;
+    justify-content: space-between;
+}
+
+#home-points-1, #home-points-2, #home-points-3 {
+
+    font-size: 18px;
+    font-family: 'Cursed Timer ULiL';
+    font-style: normal;
+    color: #FFE600;
+    text-align: center;
+    background-color:#353535;
+    border: 2px solid #948502;
+    border-radius: 5px;
+    width: 45px;
+    height: 45px;
+}
+
+.home-fouls {
+    margin-top: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h6 {
+    color: white;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 24px;
+}
+
+#foul-counter-home {
+    background-color: #222121;
+    border: 5px solid #443F3F;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    font-family: 'Cursed Timer ULiL';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #FFE600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foul-buttons-home {
+    margin-top: 26px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.foul-buttons-home #foul-add-home,
+.foul-buttons-home #foul-reset-home {
+
+    
+    font-size: 10px;
+    color: #FFFFFF;
+    text-align: center;
+    background-color:#353535;
+    border-color: #948502 ;
+    border: 2px solid #948502;
+    border-radius: 5px;
+    width: 73px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+/* ------ GUESTS */
+
+.column-guests{
+    width: 158px;
+}
+
+#guest-counter {
+    background-color: #222121;
+    border: 5px solid #443F3F;
+    border-radius: 5px;
+    width: 155px;
+    height: 120px;
+    font-family: 'Cursed Timer ULiL';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 90px;
+    color: #FFE600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 26px;
+}
+
+.guest-points {
+    display: flex;
+    justify-content: space-between;
+}
+
+#guest-points-1, #guest-points-2, #guest-points-3 {
+
+    font-size: 18px;
+    font-family: 'Cursed Timer ULiL';
+    font-style: normal;
+    color: #FFE600;
+    text-align: center;
+    background-color:#353535;
+    border: 2px solid #948502;
+    border-radius: 5px;
+    width: 45px;
+    height: 45px;
+}
+
+.guest-fouls {
+    margin-top: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h6 {
+    color: white;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 24px;
+}
+
+#foul-counter-guest {
+    background-color: #222121;
+    border: 5px solid #443F3F;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    font-family: 'Cursed Timer ULiL';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #FFE600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foul-buttons-guest {
+    margin-top: 26px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.foul-buttons-guest #foul-add-guest,
+.foul-buttons-guest #foul-reset-guest {
+
+    
+    font-size: 10px;
+    color: #FFFFFF;
+    text-align: center;
+    background-color:#353535;
+    border-color: #948502 ;
+    border: 2px solid #948502;
+    border-radius: 5px;
+    width: 73px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}

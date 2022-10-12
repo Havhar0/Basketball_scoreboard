@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>Scoreboard</title>
+    </head>
+    <body>
+
+
+
+<!-- Timer -->
+
+    <div class="container">
+
+                <div class="timer">
+                    <div id="handler" onclick="startStop()">START</div>
+                    <div id="timerDisplay">00:00</div>
+                    <div id="timer-reset" onclick="Reset()">RESET</div>
+                </div>
+
+
+    <!-- Left column -->
+
+        <div id="container-home-guest">
+                
+                <div class="column-home">
+
+                    <h3>HOME</h3>
+
+                    <div id="home-counter">0</div>
+
+                    <div class="home-points">
+                        <button id="home-points-1" onclick="addHome1()">+1</button>
+                        <button id="home-points-2" onclick="addHome2()">+2</button>
+                        <button id="home-points-3" onclick="addHome3()">+3</button>
+                    </div>
+
+                    <div class="home-fouls">
+                        <h6>FOULS</h6>
+                        <div id="foul-counter-home">0</div>
+                    </div>
+
+                    <div class="foul-buttons-home">
+                        <button id="foul-add-home" onclick="addFoulHome()">ADD</button>
+                        <button id="foul-reset-home" onclick="resetFoulHome()">RESET</button>
+                    </div>
+
+                </div>
+
+    <!-- Right column -->
+
+                <div class="column-guests">
+
+                    <h3>GUEST</h3>
+
+                    <div id="guest-counter">0</div>
+
+                    <div class="guest-points">
+                        <button id="guest-points-1" onclick="addGuest1()">+1</button>
+                        <button id="guest-points-2" onclick="addGuest2()">+2</button>
+                        <button id="guest-points-3" onclick="addGuest3()">+3</button>
+                    </div>
+
+                    <div class="home-fouls">
+                        <h6>FOULS</h6>
+                        <div id="foul-counter-guest">0</div>
+                    </div>
+
+                    <div class="foul-buttons-guest">
+                        <button id="foul-add-guest" onclick="addFoulGuest()">ADD</button>
+                        <button id="foul-reset-guest" onclick="resetFoulGuest()">RESET</button>
+                    </div>
+
+                </div>
+
+        </div>
+
+    </div>
+
+        <script src="index.js"></script>
+    </body>
+</html>
